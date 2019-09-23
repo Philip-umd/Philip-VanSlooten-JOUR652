@@ -1,6 +1,9 @@
-h1 {text-align: center;
-  font-family: arial,sans-serif;
-  color: 33485e;
-  font-weight: 1.5em;
+h1 {
+  text-align: center;
+  font-family: open Sans, arial, sans-serif;
+  color: #33485e;
+  font-weight: 700;
   text-transform: uppercase;
+  font-size: 3em;
 }
+header{font-family: }
