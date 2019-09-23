@@ -11,5 +11,8 @@ h2 {
   background-color: #33485e;
   color: white;
   weight: 400;
-
+}
+h3 {
+font-size: 1.5em;
+weight: 700;
 }
