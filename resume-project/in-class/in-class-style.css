@@ -50,8 +50,8 @@ div#title {
   color: #33485e;
   weight: 700;
   width: 60%;
-  min-width: 1500px;
-  margin: 20px 0px 0px 0px;
+  min-width: 300px;
+  margin: 20px auto 0 auto;
 }
 /*organizations*/
 div.organization {
@@ -84,6 +84,7 @@ div.date {
   min-width: 300px;
   width: 60%;
   margin: 0 auto;
+  text-align: center;
 }
 #education{
   margin: 10px 0px 0px 0px;
@@ -95,8 +96,8 @@ div.date {
   font-family: arial, sans-serif;
   font-size: 1em;
 }
-.mission-statement{
+p.mission-statement{
   width: 60%;
   min-width: 300px;
-  margin: 0px 0 auto 30px 0 auto;
+  margin: 0 auto 30px auto;
 }
