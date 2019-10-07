@@ -1,5 +1,6 @@
 /*styles for my resume*/
 /*banner at top*/
+/*changed headings to divs*/
 div#container{
   width: 100%;
   max-width: 960px;
@@ -19,6 +20,7 @@ div#name{
   margin: 0 auto;
 }
 /*paragraph font style*/
+/*added class tags to style margins and center text*/
 p.description {
   font-family: "open sans", arial, sans-serif;
   font-size: 1em;
@@ -26,6 +28,7 @@ p.description {
   margin: 10px 0px 20px 0px;
 }
 /*section titles*/
+/*added classes to section headers*/
 div.section-header{
   text-transform: uppercase;
   font-family: "open sans", arial, sans-serif;
@@ -33,14 +36,14 @@ div.section-header{
   color: white;
   weight: 400;
   margin: 20px 0px 10px 0px;
-  max-width: 1500px;
+  max-width: 400px;
   font-size:1.75em;
 }
 /*position titles*/
 div.job-title {
 font-size: 1.5em;
 font-family: "open sans", arial, sans-serif;
-weight: 700;
+font-weight: 700;
 }
 /*work sought title -- multiplatform journalist*/
 div#title {
@@ -48,16 +51,17 @@ div#title {
   font-family: "open sans", arial, sans-serif;
   font-size: 1.75em;
   color: #33485e;
-  weight: 700;
+  font-weight: 700;
   width: 60%;
   min-width: 300px;
-  margin: 20px auto 0 auto;
+  margin: 20px auto 10px auto;
+  text-align: center;
 }
 /*organizations*/
 div.organization {
   font-size: 1.25em;
   font-family: "open sans", arial, sans-serif;
-  weight: 400;
+  font-weight: 400;
   margin-top: 2px;
 }
 /*employment dates*/
@@ -70,7 +74,7 @@ div.date {
 }
 /*social media, education, skill lists*/
 .menu li {
-  font-family: arial, sans-serif;
+  font-family: "open sans", arial, sans-serif;
   font-size: 1em;
   color: #444;
   margin: 0 auto;
@@ -81,23 +85,27 @@ div.date {
   min-width: 300px;
 }
 .menu {
+  font-family: "open sans", arial, sans-serif;
+  font-size: 1em;
+  color: #444;
+  padding: 0px;
   min-width: 300px;
   width: 60%;
-  margin: 0 auto;
   text-align: center;
+  margin: 0 auto;
 }
 #education{
   margin: 10px 0px 0px 0px;
-  font-family: arial, sans-serif;
+  font-family: "open sans", arial, sans-serif;
   font-size: 1em;
 }
 #skills{
   margin: 10px 0px 0px 0px;
-  font-family: arial, sans-serif;
+  font-family: "open sans", arial, sans-serif;
   font-size: 1em;
 }
 p.mission-statement{
   width: 60%;
   min-width: 300px;
-  margin: 0 auto 30px auto;
+  margin: 10px auto 30px auto;
 }
