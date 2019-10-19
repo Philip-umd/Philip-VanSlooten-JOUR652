@@ -1,19 +1,20 @@
-/*styles for my resume*/
-.banner-small{
+.banner-small {
 display: none;
 }
-.banner-large{
-display: block;
-margin: 100%;
-}
-@media (max-width: 970px){
-.banner-small{
+
+.banner-large {
 display: block;
 }
-.banner-large{
+
+@media (max-width: 970px) {
+.banner-small {
+display: block;
+}
+.banner-large {
 display: none;
 }
 }
+
 div#container{
   width: 100%;
   max-width: 960px;
@@ -32,12 +33,13 @@ div#name{
   min-width: 300px;
   margin: 0 auto;
 }
+/*paragraph font style*/
+/*added class tags to style margins and center text*/
 p.description {
   font-family: "open sans", arial, sans-serif;
   font-size: 1em;
   color: #444;
   margin: 10px 0px 20px 0px;
-  width: 100%;
 }
 /*section titles*/
 /*added classes to section headers*/
@@ -117,6 +119,7 @@ div.date {
   font-size: 1em;
 }
 p.mission-statement{
-  width: 100%;
+  width: 60%;
+  min-width: 300px;
   margin: 10px auto 30px auto;
 }
