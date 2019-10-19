@@ -1,0 +1,131 @@
+/*styles for my resume*/
+div#navigation-bar{
+  width: 100%
+  max-width: 960px;
+  margin: 0 auto;
+  display: block;
+}
+.banner-small {
+display: none;
+}
+
+.banner-large {
+display: block;
+}
+
+@media (max-width: 970px) {
+.banner-small {
+display: block;
+}
+.banner-large {
+display: none;
+}
+}
+div#container{
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+div#name{
+  text-align: center;
+  font-family: "open sans", arial, sans-serif;
+  color: #33485e;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 3em;
+  border-bottom: 1px solid #33485e;
+  width: 60%;
+  min-width: 300px;
+  margin: 0 auto;
+}
+/*paragraph font style*/
+/*added class tags to style margins and center text*/
+p.description {
+  font-family: "open sans", arial, sans-serif;
+  font-size: 1em;
+  color: #444;
+  margin: 10px 0px 20px 0px;
+}
+/*section titles*/
+/*added classes to section headers*/
+div.section-header{
+  text-transform: uppercase;
+  font-family: "open sans", arial, sans-serif;
+  background-color: #33485e;
+  color: white;
+  weight: 400;
+  margin: 20px 0px 10px 0px;
+  max-width: 400px;
+  font-size:1.75em;
+}
+/*position titles*/
+div.job-title {
+font-size: 1.5em;
+font-family: "open sans", arial, sans-serif;
+font-weight: 700;
+}
+/*work sought title -- multiplatform journalist*/
+div#title {
+  text-transform: uppercase;
+  font-family: "open sans", arial, sans-serif;
+  font-size: 1.75em;
+  color: #33485e;
+  font-weight: 700;
+  width: 60%;
+  min-width: 300px;
+  margin: 20px auto 10px auto;
+  text-align: center;
+}
+/*organizations*/
+div.organization {
+  font-size: 1.25em;
+  font-family: "open sans", arial, sans-serif;
+  font-weight: 400;
+  margin-top: 2px;
+}
+/*employment dates*/
+div.date {
+  font-style: italic;
+  font-family: "open sans", arial, sans-serif;
+  font-size: 1em;
+  weight: 400;
+  margin: 2px 0px 0px 0px;
+}
+/*social media, education, skill lists*/
+.menu li {
+  font-family: "open sans", arial, sans-serif;
+  font-size: 1em;
+  color: #444;
+  margin: 0 auto;
+  padding: 0px;
+  display: inline;
+  text-decoration: none;
+  width: 60%;
+  min-width: 300px;
+}
+.menu {
+  font-family: "open sans", arial, sans-serif;
+  font-size: 1em;
+  color: #444;
+  padding: 0px;
+  min-width: 300px;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+}
+#education{
+  margin: 10px 0px 0px 0px;
+  font-family: "open sans", arial, sans-serif;
+  font-size: 1em;
+}
+#skills{
+  margin: 10px 0px 0px 0px;
+  font-family: "open sans", arial, sans-serif;
+  font-size: 1em;
+}
+p.mission-statement{
+  width: 60%;
+  min-width: 300px;
+  margin: 10px auto 30px auto;
+}
