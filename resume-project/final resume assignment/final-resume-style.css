@@ -5,19 +5,19 @@ div#navigation-bar{
   margin: 0 auto;
   display: block;
 }
-.banner-small {
+.banner-small{
 display: none;
+width: 100%;
 }
-
-.banner-large {
+.banner-large{
+display: block;
+width: 100%;
+}
+@media (max-width: 970px){
+.banner-small{
 display: block;
 }
-
-@media (max-width: 970px) {
-.banner-small {
-display: block;
-}
-.banner-large {
+.banner-large{
 display: none;
 }
 }
