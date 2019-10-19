@@ -23,8 +23,9 @@ display: none;
 div#container{
   width: 100%;
   max-width: 960px;
-  margin: 0 auto;
+  margin: 0 10px auto;
   padding-bottom: 50px;
+  float: left;
 }
 p.description {
   font-family: "open sans", arial, sans-serif;
@@ -37,12 +38,12 @@ p.description {
 div.section-header{
   text-transform: uppercase;
   font-family: "open sans", arial, sans-serif;
-  background-color: #33485e;
+  background-color: lightskyblue;
   color: white;
-  weight: 400;
+  weight: bold;
   margin: 20px 0px 10px 0px;
-  max-width: 400px;
-  font-size:1.75em;
+  max-width: 1600px;
+  font-size:2em;
 }
 /*position titles*/
 div.job-title {
@@ -100,15 +101,19 @@ div.date {
 }
 p.mission-statement{
   width: 100%;
-  margin: 10px auto 30px auto;
 }
 div.portfolio-images{
-  width: 600px;
+  width: 500px;
   float: left;
+  margin: 20px
 }
 
 span {
-  text-align: center;
+  text-align: left;
   font-style: italic;
   color: gray;
+  text-size: 36px;
+}
+#bottom-clips{
+  font-size: 40px;
 }
