@@ -144,7 +144,9 @@ h1.display-4{
   color: lightskyblue;
   text-align: center;
 }
-
+.jumbotron{
+  margin-bottom: 0px;
+}
 footer {
   display: inline;
 }
