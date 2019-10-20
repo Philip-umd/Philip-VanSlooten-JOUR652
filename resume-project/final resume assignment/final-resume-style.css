@@ -8,6 +8,7 @@ display: none;
 
 .banner-large {
 display: block;
+width: 100%;
 }
 
 @media (min-width: @screen-md-min){
@@ -143,9 +144,7 @@ h1.display-4{
   color: lightskyblue;
   text-align: center;
 }
-div#box{
-  float:left;
-}
+
 footer {
   display: inline;
 }
