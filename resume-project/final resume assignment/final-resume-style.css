@@ -25,13 +25,13 @@ div#container{
   max-width: 960px;
   margin: 0 10px auto;
   padding-bottom: 50px;
-  float: left;
 }
 p.description {
   font-family: "open sans", arial, sans-serif;
-  font-size: 1em;
+  font-size: .75em;
   color: #444;
   margin: 10px 0px 20px 0px;
+  color: gray;
 }
 /*section titles*/
 /*added classes to section headers*/
@@ -43,29 +43,35 @@ div.section-header{
   weight: bold;
   margin: 20px 0px 10px 0px;
   max-width: 1600px;
-  font-size:2em;
+  font-size:1.75em;
+  padding-left: 10px;
 }
 /*position titles*/
 div.job-title {
-font-size: 1.25em;
+font-size: .25em;
 font-family: "open sans", arial, sans-serif;
-font-weight: 700;
+font-weight: normal;
+color: violet;
+background-color: lightgray;
+padding-left: 10px;
 }
 
 /*organizations*/
 div.organization {
-  font-size: 1.20em;
+  font-size: .75em;
   font-family: "open sans", arial, sans-serif;
   font-weight: 400;
   margin-top: 2px;
+
 }
 /*employment dates*/
 div.date {
   font-style: italic;
   font-family: "open sans", arial, sans-serif;
-  font-size: 1em;
+  font-size: .50em;
   weight: 400;
   margin: 2px 0px 0px 0px;
+  color: dimgray;
 }
 /*social media, education, skill lists*/
 .menu li {
@@ -78,6 +84,7 @@ div.date {
   text-decoration: none;
   width: 60%;
   min-width: 300px;
+  color: dimgray;
 }
 .menu {
   font-family: "open sans", arial, sans-serif;
@@ -88,23 +95,26 @@ div.date {
   width: 60%;
   text-align: center;
   margin: 0 auto;
+  color: dimgray;
 }
 #education{
   margin: 10px 0px 0px 0px;
   font-family: "open sans", arial, sans-serif;
   font-size: 1em;
+  color: dimgray;
 }
 #skills{
   margin: 10px 0px 0px 0px;
   font-family: "open sans", arial, sans-serif;
   font-size: 1em;
+  color: dimgray;
 }
 p.mission-statement{
   width: 100%;
 }
 div.portfolio-images{
   width: 500px;
-  float: left;
+  clear: left;
   margin: 20px
 }
 
@@ -112,7 +122,7 @@ span {
   text-align: left;
   font-style: italic;
   color: gray;
-  font-size: 1.20em;
+  font-size: 1.75em;
 }
 #bottom-clips{
   font-size: 40px;
@@ -125,10 +135,15 @@ div.blockquote{
   color: violet;
 }
 .blockquote-footer{
-  text-align: left;
+  text-align: center;
+  margin-bottom: 20px;
 }
 h1.display-4{
   font-style: italic;
   font-family: serif;
   color: lightskyblue;
+  text-align: center;
+}
+div#box{
+  float:left;
 }
