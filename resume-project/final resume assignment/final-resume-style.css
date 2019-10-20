@@ -47,14 +47,14 @@ div.section-header{
 }
 /*position titles*/
 div.job-title {
-font-size: 1.5em;
+font-size: 1.25em;
 font-family: "open sans", arial, sans-serif;
 font-weight: 700;
 }
 
 /*organizations*/
 div.organization {
-  font-size: 1.25em;
+  font-size: 1.20em;
   font-family: "open sans", arial, sans-serif;
   font-weight: 400;
   margin-top: 2px;
@@ -112,8 +112,23 @@ span {
   text-align: left;
   font-style: italic;
   color: gray;
-  text-size: 36px;
+  font-size: 1.20em;
 }
 #bottom-clips{
   font-size: 40px;
+}
+div.blockquote{
+  font-size: 2em;
+  font-style: italic;
+  text-align: center;
+  font-family: serif;
+  color: violet;
+}
+.blockquote-footer{
+  text-align: left;
+}
+h1.display-4{
+  font-style: italic;
+  font-family: serif;
+  color: lightskyblue;
 }
