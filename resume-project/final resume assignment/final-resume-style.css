@@ -1,0 +1,152 @@
+*{
+  box-sizing: border-box;
+}
+
+.banner-small {
+display: none;
+}
+
+.banner-large {
+display: block;
+width: 100%;
+}
+
+@media (min-width: @screen-md-min){
+.banner-small {
+display: block;
+}
+.banner-large {
+display: none;
+}
+}
+
+div#container{
+  width: 100%;
+  max-width: 960px;
+  margin: 0 10px auto;
+  padding-bottom: 50px;
+}
+p.description {
+  font-family: "open sans", arial, sans-serif;
+  font-size: .75em;
+  color: #444;
+  margin: 10px 0px 20px 0px;
+  color: gray;
+}
+/*section titles*/
+/*added classes to section headers*/
+div.section-header{
+  text-transform: uppercase;
+  font-family: "open sans", arial, sans-serif;
+  background-color: lightskyblue;
+  color: white;
+  weight: bold;
+  margin: 20px 0px 10px 0px;
+  max-width: 1600px;
+  font-size:1.75em;
+  padding-left: 10px;
+}
+/*position titles*/
+div.job-title {
+font-size: 1.50em;
+font-family: "open sans", arial, sans-serif;
+font-weight: normal;
+color: violet;
+background-color: lightgray;
+padding-left: 10px;
+}
+
+/*organizations*/
+div.organization {
+  font-size: .75em;
+  font-family: "open sans", arial, sans-serif;
+  font-weight: 400;
+  margin-top: 2px;
+
+}
+/*employment dates*/
+div.date {
+  font-style: italic;
+  font-family: "open sans", arial, sans-serif;
+  font-size: .50em;
+  weight: 400;
+  margin: 2px 0px 0px 0px;
+  color: dimgray;
+}
+/*social media, education, skill lists*/
+.menu li {
+  font-family: "open sans", arial, sans-serif;
+  font-size: .75em;
+  color: #444;
+  margin: 0 auto;
+  padding: 0px;
+  display: inline;
+  text-decoration: none;
+  width: 60%;
+  min-width: 300px;
+  color: dimgray;
+}
+.menu {
+  font-family: "open sans", arial, sans-serif;
+  font-size: .75em;
+  color: #444;
+  padding: 0px;
+  min-width: 300px;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  color: dimgray;
+}
+#education{
+  margin: 10px 0px 0px 0px;
+  font-family: "open sans", arial, sans-serif;
+  font-size: .75em;
+  color: dimgray;
+}
+#skills{
+  margin: 10px 0px 0px 0px;
+  font-family: "open sans", arial, sans-serif;
+  font-size: .75em;
+  color: dimgray;
+}
+p.mission-statement{
+  width: 100%;
+}
+div.portfolio-images{
+  width: 500px;
+  clear: left;
+  margin: 20px
+}
+
+span {
+  text-align: left;
+  font-style: italic;
+  color: gray;
+  font-size: 1em;
+}
+#bottom-clips{
+  font-size: 40px;
+}
+div.blockquote{
+  font-size: 2em;
+  font-style: italic;
+  text-align: center;
+  font-family: serif;
+  color: violet;
+}
+.blockquote-footer{
+  text-align: center;
+  margin-bottom: 20px;
+}
+h1.display-4{
+  font-style: italic;
+  font-family: serif;
+  color: lightskyblue;
+  text-align: center;
+}
+.jumbotron{
+  margin-bottom: 0px;
+}
+footer {
+  display: inline;
+}
