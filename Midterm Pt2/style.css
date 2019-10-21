@@ -1,5 +1,63 @@
 #byline{
-  font-family: Helvetica, arial, san-sans-serif;
+  font-family: Helvetica, arial, sans-serif;
   weight: bold;
   font-size: 16px;
+  font-style: italic;
+}
+
+p{
+  font-family: Georgia, Times, serif;
+  weight: normal;
+  font-size: 18px;
+}
+
+.main-headline{
+  font-family: Times, serif;
+  font-size: 36px;
+  margin-bottom: 10px;
+  weight: bold;
+}
+
+.subheadings{
+  font-family: Times; serif;
+  font-size: 24px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.subheadings-2{
+  font-family: Garamond, arial, sans-serif;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.interview-questions{
+  font-family: arial, sans-serif;
+  weight: bold;
+  margin-bottom: 5px;
+}
+
+.blockquote{
+  font-size: 32px;
+  font-style: italic;
+  background-color: tan;
+}
+
+span{
+    font-family: arial, sans-serif;
+    color: gray;
+    font-size: 18px;
+    font-style: italic;
+    margin-left: 40px;
+  }
+
+#content{
+  display: center;
+  width: 100%;
+}
+
+.banner{
+  width: 100%;
+  margin-bottom: 20px;
 }
