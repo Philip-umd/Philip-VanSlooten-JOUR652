@@ -1,11 +1,27 @@
 .headline{
-  margin-left: 10px;
+  margin: auto;
+  font-family: Garamond, serif;
+  text-align: center;
 }
 
 .container{
-
+  margin: auto;
 }
 
 .byline {
+  margin-left: 10px;
+  font-size: 1em;
+  font-family: sans-serif;
+  text-align: center;
+}
 
+figcaption{
+  color: gray;
+  font-style: italic;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  text-align: center;
 }
