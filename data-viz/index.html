@@ -123,10 +123,12 @@
    <!-- END first graphic container-->
 
    <!-- second graphic container-->
-   <div id="shootingsByTypeChart"></div>
+   <h6> <em> 2. Where do school shootings occur? </em></h6>
+   <div id="incidentlocation"></div>
    <!-- END second graphic container -->
 
    <!-- third graphic container-->
+   <h6> <em> 3. What race are school shooters likely to be? </em></h6>
    <div id="shooterrace"></div>
    <!-- END third graphic container -->
 
@@ -152,23 +154,18 @@
 
    //CHART 2
    var chart2 = c3.generate({
-      bindto: '#shootingsByTypeChart',
+      bindto: '#incidentlocation',
       data: {
         columns: [
-          ['Targeted', 130],
-          ['indiscriminate', 42],
-          ['Accidental', 25],
-          ['Targeted and indiscriminate', 5],
-          ['Public suicide', 4],
-          ['Unclear', 3],
-          ['hostage suicide', 2],
-          ['Accidental or targeted', 2],
-          ['Public suicide (attempted)', 1]
+          ['City', 47.20],
+          ['Suburb', 27.10],
+          ['Town', 11.21],
+          ['Rural', 14.49],
         ],
         type: 'bar'
       },
       color: {
-        pattern: ['#ff0000', '#000000', '#ee6a4b', '#60c4b2', '#973895', '#fae255', '#af3d46', '#f8bb63', '#818281']
+        pattern: ['#ff0000', '#000000', '#ee6a4b', '#60c4b2']
       }
     });
 
