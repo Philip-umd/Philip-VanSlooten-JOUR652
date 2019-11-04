@@ -127,7 +127,7 @@
    <!-- END second graphic container -->
 
    <!-- third graphic container-->
-   <div id="resourceOfficersChart"></div>
+   <div id="shooterrace"></div>
    <!-- END third graphic container -->
 
    <em>Source: Data collected by The Washington Post</em>
@@ -172,14 +172,17 @@
       }
     });
 
-    //CHART 3
+    //CHART 3 UPDATED for race of shooters
     var chart3 = c3.generate({
-      bindto: '#resourceOfficersChart',
+      bindto: '#shooterrace',
       data: {
         // iris data from R
         columns: [
-          ['Present', 35],
-          ['Not present', 65],
+          ['Asian', .95],
+          ['American Indian', 2.86],
+          ['Black', 33.33],
+          ['Hispanic', 5.71],
+          ['White', 57.14],
         ],
         type : 'pie',
         onclick: function (d, i) { console.log("onclick", d, i); },
