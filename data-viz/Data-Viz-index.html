@@ -4,9 +4,9 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>School Shootings Multimedia Template</title>
+  <title>Data Vis Assignment: Army Women & PT</title>
   <meta name="description" content="Merrill College of Journalism, UMD">
-  <meta name="author" content="Adam Marton">
+  <meta name="author" content="Philip Van Slooten">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -15,7 +15,7 @@
    <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.css" rel="stylesheet">
 
    <!-- Load our CSS -->
-   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="data-viz-style.css">
 
    <!-- Load d3.js and c3.js -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js" charset="utf-8"></script>
@@ -63,8 +63,7 @@
   </nav>
   <!-- End NavBar -->
   <div class="headline">
-        <h1> This is our big headline </h1>
-        <h2> <em> This is our subhead </em> </h2>
+        <span> U.S. Army Gender and Performance Testing </span>
   </div>
         <div class="byline"> By Philip Van Slooten </div>
 
@@ -75,9 +74,8 @@
         <div class="col-md-12">
 
           <figure>
-            <img class="img-fluid" src="http://placekitten.com/1200/600"/>
-            <figcaption>
-              This is a caption placeholder.
+            <img class="img-fluid" src="./ACFT-leg-tuck.001.jpeg"/>
+            <figcaption> The October 2019 ACFT high female fail rate was mostly due to low leg tuck event scores. <br> Image courtesy of themilitaryleader.com.
             </figcaption>
         </figure>
         </div>
@@ -88,17 +86,74 @@
 <!-- start text -->
   <div class="container">
     <div class="row">
-
       <div class="col-md-8 offset-md-2">
 
-      <h3> This is a heading 2 </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisl condimentum lorem tincidunt vehicula nec quis libero. Curabitur iaculis ipsum sed est elementum porta. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam rhoncus, elit id aliquet vestibulum, nisi neque cursus sem, id fringilla enim tellus eget ante.</p>
+      <div class="graphic-container">
+          <h1>ACFT Fails by Gender: 2019</h1>
+          <p> The Army is moving forward with implementing a new "gender neutral" combat fitness test despite initial reports of a high failure rate by female troops.</p>
+          <p> Military.com reported in October the female failure rate was as high as 84 percent according to "leaked slides" revealing the results of "11 batallions, which included 2,849 men and 357 women."</p>
+          <br><br>
+          <div id="GenderedACFTScores"></div>
 
-     <h3> This is a heading 2 </h3>
-      <p> Vestibulum non tempus dui. Fusce iaculis vehicula lacus id dapibus. Maecenas tincidunt, nulla eget aliquet auctor, nisi arcu tempor nulla, ut viverra erat lectus ut leo. Nam placerat eu quam sed lobortis. Ut et dignissim tortor. Duis id turpis at nisl mollis aliquam. Nunc facilisis ut lorem eu consectetur. Aliquam convallis elementum neque, in pharetra sem blandit et. In auctor metus at mauris porta volutpat. Duis semper faucibus viverra.</p>
+          <em>Note: 1 - Deadlift fails; 2 - Standing Power Throw fails; 3 - Hand Release Push Up Fails; 4 - Sprint, Drag, Carry fails; 5 - Leg Tuck fails and 6 - 2 Mile Run fails. Source: Military.com and armytimes.com</em>
 
-    <h3> This is a heading 2 </h3>
-      <p> Nam suscipit rhoncus ex. Ut vestibulum nisl eget volutpat venenatis. Maecenas nulla velit, pharetra nec vulputate id, maximus in mauris. Nunc semper tellus semper neque pellentesque, eu tempor mauris malesuada. Vestibulum ut dictum eros, ac aliquet sem. Ut sed convallis sem. Vestibulum vel malesuada est, in tristique mi.</p>
+        </div>
+        <!-- END first graphic container-->
+
+        <br>
+        <hr>
+        <br>
+
+
+        <!-- second graphic container-->
+        <div class="graphic-container">
+          <h1>Army Demographics: 2018</h1>
+          <p>The number of shootings per year has generally remained high in the US since the turn of the century, with noticable dips in 2002, 2011 and 2015. The last three years, the number of shootings has been consistantly high.</p>
+          <br><br>
+          <div id="incidentlocation"></div>
+
+          <em>Source: Data collected by The Washington Post</em>
+
+        </div>
+        <!-- END second graphic container -->
+
+        <br>
+        <hr>
+        <br>
+
+        <!-- third graphic container-->
+        <div class="graphic-container">
+          <h1>Female Leadership: Officer vs. Enlisted </h1>
+          <p>The number of shootings per year has generally remained high in the US since the turn of the century, with noticable dips in 2002, 2011 and 2015. The last three years, the number of shootings has been consistantly high.</p>
+          <br><br>
+          <div id="shooterrace"></div>
+
+          <em>Source: Data collected by The Washington Post</em>
+
+        </div>
+        <!-- END third graphic container -->
+
+        <br>
+        <hr>
+        <br>
+
+
+        <!-- timeline container -->
+
+        <div class="graphic-container">
+
+          <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=14e5mZ_URkz6jLbMIN16uockG1HzdMz-aD-beNPvctvs&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+
+          <em>Source: Military.com and armytimes.com</em>
+
+        </div>
+
+        <!-- END timeline container -->
+
+           <br>
+           <hr>
+           <br>
+
 
     </div>
   </div>
@@ -112,46 +167,17 @@
   <script src="./Bootstrap Template_files/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="./Bootstrap Template_files/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-  <!-- first graphic container-->
 
-   <div class="graphic-container">
-     <h2>Shootings by year</h2>
-     <p>The number of shootings per year has generally remained high in the US since the turn of the century, with noticable dips in 2002, 2011 and 2015. The last three years, the number of shootings has been consistantly high.</p>
-     <br><br>
 
-     <h6> <em> 1. Examining the carnage. </em></h6>
-     <div id="killedbyyear"></div>
-
-   </div>
-   <!-- END first graphic container-->
-
-   <!-- second graphic container-->
-   <h6> <em> 2. Where do school shootings occur? </em></h6>
-   <div id="incidentlocation"></div>
-   <!-- END second graphic container -->
-
-   <!-- third graphic container-->
-   <h6> <em> 3. What race are school shooters likely to be? </em></h6>
-   <div id="shooterrace"></div>
-   <!-- END third graphic container -->
-
-   <!-- timeline container -->
-   <h6> <em> 4. Timeline of shootings </em> </h6>
-  <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=14e5mZ_URkz6jLbMIN16uockG1HzdMz-aD-beNPvctvs&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
-   <!-- END timeline container -->
-
-   <em>Source: Data collected by The Washington Post</em>
-   <br><br>
-
-  <!--c3 script-->
-    <script type="text/javascript">
-      //CHART 1
-      var chart = c3.generate({
-     bindto: '#killedbyyear',
+    <!--c3 script-->
+  <script type="text/javascript">
+    //CHART 1
+    var chart = c3.generate({
+     bindto: '#GenderedACFTScores',
      data: {
-       x: 'x',
+       x: 'Events',
        columns: [
-         ['x', 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018],
+         ['Events', 1, 2, 3, 4, 5, 6],
          ['Number of incidents', 7, 12, 13, 5, 11, 9, 13, 15, 10, 9, 9, 9, 7, 11, 13, 16, 7, 13, 14, 12],
          ['Number injured', 35, 3, 22, 7, 7, 9, 17, 16, 17, 5, 4, 6, 9, 8, 13, 14, 2, 18, 15, 44],
        ]
