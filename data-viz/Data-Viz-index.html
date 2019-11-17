@@ -91,11 +91,15 @@
       <div class="graphic-container">
           <h1>ACFT Fails by Gender: 2019</h1>
           <p> The Army is moving forward with implementing a new "gender neutral" combat fitness test despite initial reports of a high failure rate by female troops.</p>
-          <p> Military.com reported in October the female failure rate was as high as 84 percent according to "leaked slides" revealing the results of "11 batallions, which included 2,849 men and 357 women."</p>
-          <br><br>
+          <p> Military.com reported in October the female failure rate was as high as 84 percent, according to "leaked slides" which revealed the results for 11 batallions consisting of over 3,000 mostly male personnel.</p>
+
           <div id="GenderedACFTScores"></div>
 
-          <em>Note: 1 - Deadlift fails; 2 - Standing Power Throw fails; 3 - Hand Release Push Up Fails; 4 - Sprint, Drag, Carry fails; 5 - Leg Tuck fails and 6 - 2 Mile Run fails. Source: Military.com and armytimes.com</em>
+          <p> A majority of the failures, 72 percent, were in the leg tuck event. Army-Fitness.com reports this event requires double the amount of force required for a traditional sit-up as soldiers must touch their knees or thighs to their elbows while remaining suspended from a pull-up bar. </p>
+          <br><br>
+
+
+          <em><strong>ACFT Events: </strong>(1) Deadlift; (2) Standing Power Throw; (3) Hand Release Push Up; (4) Sprint, Drag, Carry; (5) Leg Tuck and (6) 2-Mile Run. <br> Sources: Military.com and armytimes.com</em>
 
         </div>
         <!-- END first graphic container-->
@@ -107,12 +111,16 @@
 
         <!-- second graphic container-->
         <div class="graphic-container">
-          <h1>Army Demographics: 2018</h1>
-          <p>The number of shootings per year has generally remained high in the US since the turn of the century, with noticable dips in 2002, 2011 and 2015. The last three years, the number of shootings has been consistantly high.</p>
+          <h1>Female Enlistment: 1974-2016</h1>
+          <p>The number of enlisted women across branches has increased significantly from 2 to 18 percent since the end of the Vietnam War, according to the Council on Foreign Relations.</p>
           <br><br>
-          <div id="incidentlocation"></div>
+          <div id="EnlistedFemalesbyBranch"></div>
 
-          <em>Source: Data collected by The Washington Post</em>
+          <p> This increase corresponds with an increase in the number of female officers and combat veterans in positions of civilian leadership, such as former Army Lt. Col. and current Sen. Tammy Duckworth (D-Illinois).</p>
+
+          <p> Current officers and cadets in both the Army and Air Force ROTC batallions at the University of Maryland agree low physical test scores can negatively impact retention and promotion across branches.
+
+          <em>Source: cfr.org</em>
 
         </div>
         <!-- END second graphic container -->
@@ -178,8 +186,8 @@
        x: 'Events',
        columns: [
          ['Events', 1, 2, 3, 4, 5, 6],
-         ['Number of incidents', 7, 12, 13, 5, 11, 9, 13, 15, 10, 9, 9, 9, 7, 11, 13, 16, 7, 13, 14, 12],
-         ['Number injured', 35, 3, 22, 7, 7, 9, 17, 16, 17, 5, 4, 6, 9, 8, 13, 14, 2, 18, 15, 44],
+         ['Percent Failure: Male', 2, 9, 4, 5, 14, 11],
+         ['Percent Failure: Female', 4, 7, 4, 3, 72, 6],
        ]
      },
      color: {
@@ -189,18 +197,18 @@
 
    //CHART 2
    var chart2 = c3.generate({
-      bindto: '#incidentlocation',
+      bindto: '#EnlistedFemalesbyBranch',
       data: {
         columns: [
-          ['City', 47.20],
-          ['Suburb', 27.10],
-          ['Town', 11.21],
-          ['Rural', 14.49],
+          ['Army', 47.20],
+          ['Navy, 27.10],
+          ['Air Force', 11.21],
+          ['Marines', 14.49],
         ],
         type: 'bar'
       },
       color: {
-        pattern: ['#ff0000', '#000000', '#ee6a4b', '#60c4b2']
+        pattern: ['green', 'light-blue', 'dark-blue', 'red']
       }
     });
 
