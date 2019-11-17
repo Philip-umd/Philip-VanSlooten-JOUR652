@@ -63,7 +63,7 @@
   </nav>
   <!-- End NavBar -->
   <div class="headline">
-        <span> U.S. Army Gender and Performance Testing </span>
+        <span> New Army PT test could disproportionately impact black women </span>
   </div>
         <div class="byline"> By Philip Van Slooten </div>
 
@@ -74,8 +74,8 @@
         <div class="col-md-12">
 
           <figure>
-            <img class="img-fluid" src="./ACFT-leg-tuck.001.jpeg"/>
-            <figcaption> The October 2019 ACFT high female fail rate was mostly due to low leg tuck event scores. <br> Image courtesy of themilitaryleader.com.
+            <img class="img-fluid" src="./ACFT.001.jpeg"/>
+            <figcaption> In 2016 there were more black women in the Army than any other branch, according to the Council on Foreign Relations. <br> Image courtesy of the US Military Academy.
             </figcaption>
         </figure>
         </div>
@@ -95,14 +95,21 @@
 
           <div id="GenderedACFTScores"></div>
 
+          <em><strong>ACFT Events: </strong>(1) Deadlift; (2) Standing Power Throw; (3) Hand Release Push Up; (4) Sprint, Drag, Carry; (5) Leg Tuck and (6) 2-Mile Run. <br> Sources: Military.com and armytimes.com</em> <br><br>
+
           <p> A majority of the failures, 72 percent, were in the leg tuck event. Army-Fitness.com reports this event requires double the amount of force required for a traditional sit-up as soldiers must touch their knees or thighs to their elbows while remaining suspended from a pull-up bar. </p>
           <br><br>
 
 
-          <em><strong>ACFT Events: </strong>(1) Deadlift; (2) Standing Power Throw; (3) Hand Release Push Up; (4) Sprint, Drag, Carry; (5) Leg Tuck and (6) 2-Mile Run. <br> Sources: Military.com and armytimes.com</em>
-
         </div>
         <!-- END first graphic container-->
+
+        <figure>
+          <img class="img-fluid" src="./ACFT-leg-tuck.001.jpeg"/>
+          <figcaption> Image courtesy of themilitaryleader.com.
+          </figcaption>
+       </figure>
+
 
         <br>
         <hr>
@@ -111,14 +118,15 @@
 
         <!-- second graphic container-->
         <div class="graphic-container">
-          <h1>Female Enlistment: 1974-2016</h1>
-          <p>The number of enlisted women across branches has increased significantly from 2 to 18 percent since the end of the Vietnam War, according to the Council on Foreign Relations.</p>
+          <h1>Female Officers by Branch: 2016</h1>
+          <p>The percentage of women in the military has increased from 2 to 18 since then end of the Vietnam War, according to the Council on Foreign Relations.</p>
+
+          <p> This corresponds with an increase in the percent of female officers and combat veterans in positions of civilian leadership, such as former Army Lt. Col. and current Sen. Tammy Duckworth (D-Illinois).</p>
+
           <br><br>
-          <div id="EnlistedFemalesbyBranch"></div>
+          <div id="femaleofficersbybranch"></div>
 
-          <p> This increase corresponds with an increase in the number of female officers and combat veterans in positions of civilian leadership, such as former Army Lt. Col. and current Sen. Tammy Duckworth (D-Illinois).</p>
-
-          <p> Current officers and cadets in both the Army and Air Force ROTC batallions at the University of Maryland agree low physical test scores can negatively impact retention and promotion across branches.
+          <p> Current Army and Air Force ROTC cadets and officers at the University of Maryland agree low physical test scores can negatively impact retention and promotion across branches.</p>
 
           <em>Source: cfr.org</em>
 
@@ -131,12 +139,12 @@
 
         <!-- third graphic container-->
         <div class="graphic-container">
-          <h1>Female Leadership: Officer vs. Enlisted </h1>
-          <p>The number of shootings per year has generally remained high in the US since the turn of the century, with noticable dips in 2002, 2011 and 2015. The last three years, the number of shootings has been consistantly high.</p>
+          <h1>Black Female Enlisted: 2016 </h1>
+          <p>More black women serve in the Army than in any other branch and would be disproportionatly affected by declines in recruitment, retention and promotion based on physical training performance.</p>
           <br><br>
-          <div id="shooterrace"></div>
+          <div id="armydemographics"></div>
 
-          <em>Source: Data collected by The Washington Post</em>
+          <em>Source: cfr.org</em>
 
         </div>
         <!-- END third graphic container -->
@@ -150,9 +158,9 @@
 
         <div class="graphic-container">
 
-          <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=14e5mZ_URkz6jLbMIN16uockG1HzdMz-aD-beNPvctvs&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+          <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1JctWPO2sDu6txTUj6dz2MJ8HMm2xBJ_tLCQ7gW7nDlc&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
 
-          <em>Source: Military.com and armytimes.com</em>
+          <em>Source: history.com</em>
 
         </div>
 
@@ -179,6 +187,7 @@
 
     <!--c3 script-->
   <script type="text/javascript">
+
     //CHART 1
     var chart = c3.generate({
      bindto: '#GenderedACFTScores',
@@ -197,32 +206,31 @@
 
    //CHART 2
    var chart2 = c3.generate({
-      bindto: '#EnlistedFemalesbyBranch',
+      bindto: '#femaleofficersbybranch',
       data: {
         columns: [
-          ['Army', 47.20],
-          ['Navy, 27.10],
-          ['Air Force', 11.21],
-          ['Marines', 14.49],
+          ['Army', 18],
+          ['Air Force', 21],
+          ['Navy', 18],
+          ['Marine Corps', 7.5],
         ],
         type: 'bar'
       },
       color: {
-        pattern: ['green', 'light-blue', 'dark-blue', 'red']
+        pattern: ['#013220', '#00008b', '#add8e6', '#8b0000']
       }
     });
 
     //CHART 3 UPDATED for race of shooters
     var chart3 = c3.generate({
-      bindto: '#shooterrace',
+      bindto: '#armydemographics',
       data: {
         // iris data from R
         columns: [
-          ['Asian', .95],
-          ['American Indian', 2.86],
-          ['Black', 33.33],
-          ['Hispanic', 5.71],
-          ['White', 57.14],
+          ['Army', .40],
+          ['Air Force', .22],
+          ['Navy', .20],
+          ['Marine Corps', .18],
         ],
         type : 'pie',
         onclick: function (d, i) { console.log("onclick", d, i); },
@@ -230,7 +238,7 @@
         onmouseout: function (d, i) { console.log("onmouseout", d, i); }
       },
       color: {
-        pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895']
+        pattern: ['#013220', '#00008b', '#add8e6', '#8b0000']
       }
     });
 
