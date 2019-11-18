@@ -1,6 +1,6 @@
 .headline{
   margin: auto;
-  font-family: Garamond, serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
 
@@ -13,15 +13,36 @@
   font-size: 1em;
   font-family: sans-serif;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 figcaption{
   color: gray;
   font-style: italic;
+  font-family: 'Montserrat', sans-serif;
 }
 
 footer{
   background-color: black;
   color: white;
   text-align: center;
+}
+
+a:link{
+  color: blue;
+  text-decoration:none;
+}
+
+a:visted {
+  color: purple;
+  text-decoration:none;
+}
+
+a:hover {
+  color: purple;
+  text-decoration:none;
+}
+
+body {
+  font-family: 'PT Serif', serif;
 }
