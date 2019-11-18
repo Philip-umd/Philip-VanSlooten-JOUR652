@@ -2,7 +2,7 @@
   margin: auto;
   font-family: arial, sans-serif;
   text-align: center;
-
+  font-size: 1.5em;
 }
 
 .container{
@@ -11,7 +11,7 @@
 
 .byline {
   margin-left: 10px;
-  font-size: 1em;
+  font-size: 1.5em;
   font-family: sans-serif;
   text-align: center;
 }
@@ -25,17 +25,4 @@ footer{
   background-color: black;
   color: white;
   text-align: center;
-}
-
-a:link{
-  color: blue;
-}
-
-a:visted {
-  color: purple;
-  text-decoration:underline;
-}
-
-a:hover {
-  color: purple;
 }

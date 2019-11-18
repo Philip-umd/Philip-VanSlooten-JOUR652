@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<!-- saved from url=(0103)https://amarton.github.io/652-interactive-design-development/bootstrap-template/bootstrap-template.html -->
+<!-- Data Visualization Assignment 11/18/19 -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>School Shootings Multimedia Template</title>
+  <title>Data Vis Assignment: Army Women & PT</title>
   <meta name="description" content="Merrill College of Journalism, UMD">
-  <meta name="author" content="Adam Marton">
+  <meta name="author" content="Philip Van Slooten">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -15,7 +15,7 @@
    <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.css" rel="stylesheet">
 
    <!-- Load our CSS -->
-   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="data-viz-style.css">
 
    <!-- Load d3.js and c3.js -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js" charset="utf-8"></script>
@@ -63,8 +63,7 @@
   </nav>
   <!-- End NavBar -->
   <div class="headline">
-        <h1> This is our big headline </h1>
-        <h2> <em> This is our subhead </em> </h2>
+        <span> New Army PT test could disproportionately impact black women </span>
   </div>
         <div class="byline"> By Philip Van Slooten </div>
 
@@ -75,9 +74,8 @@
         <div class="col-md-12">
 
           <figure>
-            <img class="img-fluid" src="http://placekitten.com/1200/600"/>
-            <figcaption>
-              This is a caption placeholder.
+            <img class="img-fluid" src="./ACFT.001.jpeg"/>
+            <figcaption> In 2016 there were more black women in the Army than any other branch, according to the Council on Foreign Relations. <br> Image courtesy of the US Military Academy.
             </figcaption>
         </figure>
         </div>
@@ -88,17 +86,90 @@
 <!-- start text -->
   <div class="container">
     <div class="row">
-
       <div class="col-md-8 offset-md-2">
 
-      <h3> This is a heading 2 </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisl condimentum lorem tincidunt vehicula nec quis libero. Curabitur iaculis ipsum sed est elementum porta. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam rhoncus, elit id aliquet vestibulum, nisi neque cursus sem, id fringilla enim tellus eget ante.</p>
+      <div class="graphic-container">
+          <h1>ACFT Fails by Gender: 2019</h1>
+          <p> The Army is moving forward with implementing a new "gender neutral" combat fitness test despite initial reports of a high failure rate by female troops.</p>
+          <p> Military.com reported in October the female failure rate was as high as 84 percent, according to "leaked slides" which revealed the results for 11 batallions consisting of over 3,000 mostly male personnel.</p>
 
-     <h3> This is a heading 2 </h3>
-      <p> Vestibulum non tempus dui. Fusce iaculis vehicula lacus id dapibus. Maecenas tincidunt, nulla eget aliquet auctor, nisi arcu tempor nulla, ut viverra erat lectus ut leo. Nam placerat eu quam sed lobortis. Ut et dignissim tortor. Duis id turpis at nisl mollis aliquam. Nunc facilisis ut lorem eu consectetur. Aliquam convallis elementum neque, in pharetra sem blandit et. In auctor metus at mauris porta volutpat. Duis semper faucibus viverra.</p>
+          <div id="GenderedACFTScores"></div>
 
-    <h3> This is a heading 2 </h3>
-      <p> Nam suscipit rhoncus ex. Ut vestibulum nisl eget volutpat venenatis. Maecenas nulla velit, pharetra nec vulputate id, maximus in mauris. Nunc semper tellus semper neque pellentesque, eu tempor mauris malesuada. Vestibulum ut dictum eros, ac aliquet sem. Ut sed convallis sem. Vestibulum vel malesuada est, in tristique mi.</p>
+          <em><strong>ACFT Events: </strong>(1) Deadlift; (2) Standing Power Throw; (3) Hand Release Push Up; (4) Sprint, Drag, Carry; (5) Leg Tuck and (6) 2-Mile Run. <br> Sources: Military.com and armytimes.com</em> <br><br>
+
+          <p> A majority of the failures, 72 percent, were in the leg tuck event. Army-Fitness.com reports this event requires double the amount of force required for a traditional sit-up as soldiers must touch their knees or thighs to their elbows while remaining suspended from a pull-up bar. </p>
+          <br><br>
+
+
+        </div>
+        <!-- END first graphic container-->
+
+        <figure>
+          <img class="img-fluid" src="./ACFT-leg-tuck.001.jpeg"/>
+          <figcaption> Image courtesy of themilitaryleader.com.
+          </figcaption>
+       </figure>
+
+
+        <br>
+        <hr>
+        <br>
+
+
+        <!-- second graphic container-->
+        <div class="graphic-container">
+          <h1>Female Officers by Branch: 2016</h1>
+          <p>The percentage of women in the military has increased from 2 to 18 since then end of the Vietnam War, according to the Council on Foreign Relations.</p>
+
+          <p> This corresponds with an increase in the percent of female officers and combat veterans in positions of civilian leadership, such as former Army Lt. Col. and current Sen. Tammy Duckworth (D-Illinois).</p>
+
+          <br><br>
+          <div id="femaleofficersbybranch"></div>
+
+          <p> Current Army and Air Force ROTC cadets and officers at the University of Maryland agree low physical test scores can negatively impact retention and promotion across branches.</p>
+
+          <em>Source: cfr.org</em>
+
+        </div>
+        <!-- END second graphic container -->
+
+        <br>
+        <hr>
+        <br>
+
+        <!-- third graphic container-->
+        <div class="graphic-container">
+          <h1>Black Female Enlisted: 2016 </h1>
+          <p>More black women serve in the Army than in any other branch and would be disproportionatly affected by declines in recruitment, retention and promotion based on physical training performance.</p>
+          <br><br>
+          <div id="armydemographics"></div>
+
+          <em>Source: cfr.org</em>
+
+        </div>
+        <!-- END third graphic container -->
+
+        <br>
+        <hr>
+        <br>
+
+
+        <!-- timeline container -->
+
+        <div class="graphic-container">
+
+          <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1JctWPO2sDu6txTUj6dz2MJ8HMm2xBJ_tLCQ7gW7nDlc&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+
+          <em>Source: history.com</em>
+
+        </div>
+
+        <!-- END timeline container -->
+
+           <br>
+           <hr>
+           <br>
+
 
     </div>
   </div>
@@ -112,48 +183,20 @@
   <script src="./Bootstrap Template_files/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="./Bootstrap Template_files/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-  <!-- first graphic container-->
 
-   <div class="graphic-container">
-     <h2>Shootings by year</h2>
-     <p>The number of shootings per year has generally remained high in the US since the turn of the century, with noticable dips in 2002, 2011 and 2015. The last three years, the number of shootings has been consistantly high.</p>
-     <br><br>
 
-     <h6> <em> 1. Examining the carnage. </em></h6>
-     <div id="killedbyyear"></div>
+    <!--c3 script-->
+  <script type="text/javascript">
 
-   </div>
-   <!-- END first graphic container-->
-
-   <!-- second graphic container-->
-   <h6> <em> 2. Where do school shootings occur? </em></h6>
-   <div id="incidentlocation"></div>
-   <!-- END second graphic container -->
-
-   <!-- third graphic container-->
-   <h6> <em> 3. What race are school shooters likely to be? </em></h6>
-   <div id="shooterrace"></div>
-   <!-- END third graphic container -->
-
-   <!-- timeline container -->
-   <h6> <em> 4. Timeline of shootings </em> </h6>
-  <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=14e5mZ_URkz6jLbMIN16uockG1HzdMz-aD-beNPvctvs&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
-   <!-- END timeline container -->
-
-   <em>Source: Data collected by The Washington Post</em>
-   <br><br>
-
-  <!--c3 script-->
-    <script type="text/javascript">
-      //CHART 1
-      var chart = c3.generate({
-     bindto: '#killedbyyear',
+    //CHART 1
+    var chart = c3.generate({
+     bindto: '#GenderedACFTScores',
      data: {
-       x: 'x',
+       x: 'Events',
        columns: [
-         ['x', 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018],
-         ['Number of incidents', 7, 12, 13, 5, 11, 9, 13, 15, 10, 9, 9, 9, 7, 11, 13, 16, 7, 13, 14, 12],
-         ['Number injured', 35, 3, 22, 7, 7, 9, 17, 16, 17, 5, 4, 6, 9, 8, 13, 14, 2, 18, 15, 44],
+         ['Events', 1, 2, 3, 4, 5, 6],
+         ['Percent Failure: Male', 2, 9, 4, 5, 14, 11],
+         ['Percent Failure: Female', 4, 7, 4, 3, 72, 6],
        ]
      },
      color: {
@@ -163,32 +206,31 @@
 
    //CHART 2
    var chart2 = c3.generate({
-      bindto: '#incidentlocation',
+      bindto: '#femaleofficersbybranch',
       data: {
         columns: [
-          ['City', 47.20],
-          ['Suburb', 27.10],
-          ['Town', 11.21],
-          ['Rural', 14.49],
+          ['Army', 18],
+          ['Air Force', 21],
+          ['Navy', 18],
+          ['Marine Corps', 7.5],
         ],
         type: 'bar'
       },
       color: {
-        pattern: ['#ff0000', '#000000', '#ee6a4b', '#60c4b2']
+        pattern: ['#013220', '#00008b', '#add8e6', '#8b0000']
       }
     });
 
     //CHART 3 UPDATED for race of shooters
     var chart3 = c3.generate({
-      bindto: '#shooterrace',
+      bindto: '#armydemographics',
       data: {
         // iris data from R
         columns: [
-          ['Asian', .95],
-          ['American Indian', 2.86],
-          ['Black', 33.33],
-          ['Hispanic', 5.71],
-          ['White', 57.14],
+          ['Army', .40],
+          ['Air Force', .22],
+          ['Navy', .20],
+          ['Marine Corps', .18],
         ],
         type : 'pie',
         onclick: function (d, i) { console.log("onclick", d, i); },
@@ -196,7 +238,7 @@
         onmouseout: function (d, i) { console.log("onmouseout", d, i); }
       },
       color: {
-        pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895']
+        pattern: ['#013220', '#00008b', '#add8e6', '#8b0000']
       }
     });
 
