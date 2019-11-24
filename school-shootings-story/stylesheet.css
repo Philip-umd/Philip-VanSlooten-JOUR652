@@ -19,14 +19,13 @@ text-align: left;
 }
 
 .logo-image {
-  width: 20px;
-  padding-bottom: 10px;
+  width: 15px;
+  margin-right: 5px;
 }
 
 .navbar-brand{
-  font-size: 1.25em;
+  font-size: 1em;
   font-family: 'Montserrat', sans-serif;
-  margin-left: 15px;
 }
 
 figcaption{
