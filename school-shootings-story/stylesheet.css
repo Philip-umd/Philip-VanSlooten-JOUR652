@@ -14,12 +14,19 @@ h3 {
   margin: auto;
 }
 
-.byline {
-  margin-left: 10px;
-  font-size: 1em;
-  font-family: sans-serif;
-  text-align: center;
+#logo{
+text-align: left;
+}
+
+.logo-image {
+  width: 20px;
+  padding-bottom: 10px;
+}
+
+.navbar-brand{
+  font-size: 1.25em;
   font-family: 'Montserrat', sans-serif;
+  margin-left: 15px;
 }
 
 figcaption{
@@ -87,4 +94,7 @@ ul.navbar-nav {
 
 .navbar{
   font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  font-size: 1.25em;
+  margin-left: auto;
 }
