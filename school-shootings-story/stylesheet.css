@@ -1,7 +1,18 @@
-.headline{
+.headline {
   margin: auto;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
+}
+
+h1 {
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 3em;
+}
+
+span {
+  color: #0052a5;
 }
 
 h3 {
@@ -29,9 +40,11 @@ text-align: left;
 }
 
 figcaption{
+  margin: auto;
   color: gray;
   font-style: italic;
   font-family: 'Montserrat', sans-serif;
+  text-align: center
 }
 
 footer{
@@ -59,11 +72,17 @@ body {
   font-family: 'PT Serif', serif;
 }
 
+.hero-image {
+  max-width: 900px;
+}
+
 figure {
   margin: auto;
   text-align: center;
+  padding-bottom: 40px;
 }
 .icon {
+  margin: auto;
   width: 15px;
 }
 
