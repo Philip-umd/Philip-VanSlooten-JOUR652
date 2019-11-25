@@ -1,37 +1,73 @@
-.headline{
+.headline h2 {
   margin: auto;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
+  font-size: 1em;
+  line-height: 180%;
+  padding-bottom: 20px;
+}
+
+h1 {
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+  padding-top: 20px;
+  width: 100%;
+}
+
+span {
+  color: #0052a5;
 }
 
 h3 {
   margin: auto;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .container{
   margin: auto;
 }
 
-.byline {
-  margin-left: 10px;
+#logo{
+text-align: left;
+}
+
+.logo-image {
+  width: 15px;
+  margin-right: 5px;
+}
+
+.navbar-brand{
   font-size: 1em;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+figure {
+  margin: auto;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
 }
 
-figcaption{
-  color: gray;
-  font-style: italic;
+
+.caption {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 50px;
   font-family: 'Montserrat', sans-serif;
+  color:#999;
+  text-align: center;
 }
 
-footer{
+.footer{
   background-color: black;
   color: white;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 a:link{
@@ -49,24 +85,43 @@ a:hover {
   text-decoration:none;
 }
 
-body {
-  font-family: 'PT Serif', serif;
-}
-
-figure {
-  margin: auto;
-  text-align: center;
-}
-.icon {
-  width: 15px;
-}
-
-.subhead {
-
-}
-
 p {
+  font-family: 'PT Serif', serif;
+  color: black;
+  font-size: 1em;
+  margin-bottom: 25px;
+
+}
+
+.hero-image {
+  max-width: 900px;
+}
+
+.stack-image {
+  width: 100%;
+  margin:0 auto;
+  padding-top: 30px;
+  display: block;
+  max-width: 900px;
+}
+
+.icon {
+  margin: 25px auto ;
+  width: 15px;
+  padding-right: 5px;
+}
+
+hr {
+  max-width: 900px;
+}
+
+.intro-text p {
   line-height: 180%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25em;
+  margin: 25px auto;
+
+
 }
 
 .red {
@@ -87,4 +142,18 @@ ul.navbar-nav {
 
 .navbar{
   font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  font-size: 1.15em;
+  margin-left: auto;
+}
+
+.graphic-container h4 {
+  font-size: 1.5em;
+  font-family: 'Montserrat', sans-serif;
+  color: #444;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 1px solid #cdcdcd;
+  margin: 0 auto;
+
 }
