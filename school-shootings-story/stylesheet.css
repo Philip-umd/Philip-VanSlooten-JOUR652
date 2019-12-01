@@ -32,19 +32,17 @@ h3 {
   margin: auto;
 }
 
-#logo{
-text-align: left;
-width: 15px;
-}
 
 .logo-image {
   width: 15px;
-  margin-right: 5px;
+  clear: none;
 }
 
 .navbar-brand{
   font-size: 1em;
   font-family: 'Montserrat', sans-serif;
+  margin-left: 10px;
+
 }
 
 figure {
